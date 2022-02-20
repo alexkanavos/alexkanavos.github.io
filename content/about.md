@@ -1,8 +1,7 @@
 ---
 title:
 description:
-images:
-	- images/main.png
+image: images/main.png
 ShowBreadCrumbs: false
 hidemeta: true
 disableShare: true
