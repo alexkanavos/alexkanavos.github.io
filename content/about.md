@@ -1,6 +1,6 @@
 ---
-title: ""
-description: "Information about me"
+title:
+description:
 ShowBreadCrumbs: false
 hidemeta: true
 disableShare: true

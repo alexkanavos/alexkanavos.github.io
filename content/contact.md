@@ -1,6 +1,6 @@
 ---
-title: ""
-description: Contact information
+title:
+description:
 ShowBreadCrumbs: false
 hidemeta: true
 disableShare: true
@@ -13,4 +13,4 @@ draft: false
 
 Feel free to send me an email and I will get back to you as soon as possible.
 
-[alex@alexkanavos.com](alex@alexkanavos.com)
+[alex@alexkanavos.com](mailto:alex@alexkanavos.com)
