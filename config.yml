@@ -1,6 +1,5 @@
 baseURL: "https://alexkanavos.com/"
 title: Alex Kanavos
-image: ["images/papermod-cover.png"]
 paginate: 5
 theme: PaperMod
 
