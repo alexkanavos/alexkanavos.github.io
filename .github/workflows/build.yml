@@ -4,7 +4,7 @@ on:
   pull_request:
     branches:
       - master
-      - website
+      - gh-pages
   workflow_dispatch:
     # manual run
 
@@ -15,7 +15,7 @@ jobs:
       - name: Git checkout
         uses: actions/checkout@v2
         with:
-          ref: website
+          ref: gh-pages
 
       - name: Get Theme
         run: git submodule update --init --recursive
