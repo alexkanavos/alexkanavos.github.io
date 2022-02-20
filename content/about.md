@@ -1,6 +1,8 @@
 ---
 title:
 description:
+images:
+	- images/main.png
 ShowBreadCrumbs: false
 hidemeta: true
 disableShare: true
@@ -21,3 +23,9 @@ draft: false
 
 * English
 * Greek
+
+# Contact me :e-mail:
+
+Want to get in touch? Feel free to send me an email and I will get back to you as soon as possible.
+
+[alex@alexkanavos.com](mailto:alex@alexkanavos.com)
