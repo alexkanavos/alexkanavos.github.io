@@ -18,5 +18,5 @@ draft: false
 
 ### Languages
 
-* English (Full professional proficiency)
-* Greek (Native or bilingual proficiency)
+* English
+* Greek
