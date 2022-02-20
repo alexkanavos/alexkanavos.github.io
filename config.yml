@@ -1,5 +1,6 @@
 baseURL: "https://alexkanavos.com/"
 title: Alex Kanavos
+image: ["images/papermod-cover.png"]
 paginate: 5
 theme: PaperMod
 
@@ -51,14 +52,14 @@ params:
     ShowCodeCopyButtons: true
     ShowToc: true
     # comments: false
-    images: ["papermod-cover.png"]
+    images: ["images/papermod-cover.png"]
 
     profileMode:
         enabled: true
         title: Hey there!
         subtitle: Welcome to my personal website.
-        imageUrl: "1.jpg"
-        imageTitle: my image
+        imageUrl: "images/me.jpg"
+        imageTitle: me
         #imageWidth: 160
         #imageHeight: 160
         buttons:
@@ -83,10 +84,10 @@ params:
         - name: github
           url: "https://github.com/alexkanavos/"
 
-    # label:
-    #     text: "Home"
-    #     icon: icon.png
-    #     iconHeight: 35
+    label:
+        #text: ""
+        icon: favicon.ico
+        iconHeight: 30
 
     # analytics:
     #     google:
