@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://alexkanavos.com/sitemap.xml
