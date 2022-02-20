@@ -1,42 +1,41 @@
-name: Build GH-Pages
+name: Build and Deploy Site
 
 on:
   push:
-    paths-ignore:
-      - 'images/**'
-      - 'LICENSE'
-      - 'README.md'
     branches:
       - master
-      - gh-pages
-  workflow_dispatch:
-    # manual run
+  pull_request:
+    branches:
+      - master
 
 jobs:
-  deploy:
+  build-and-deploy-site:
     runs-on: ubuntu-latest
     steps:
-      - name: Git checkout
+      - name: Checkout repo
         uses: actions/checkout@v2
         with:
-          ref: gh-pages
+          submodules: true
+          fetch-depth: 0
 
-      - name: Get Theme
-        run: git submodule update --init --recursive
-
-      - name: Update theme to Latest commit
-        run: git submodule update --remote --merge
-
-      - name: Setup hugo
+      - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.83.0'
+          hugo-version: 'latest'
 
-      - name: Build
-        run: hugo --buildDrafts --gc --verbose --minify
+      - name: Build site with Hugo
+        run: hugo --minify
 
-      - name: Deploy
+      - name: Check HTML
+        uses: chabad360/htmlproofer@master
+        with:
+          directory: "./public"
+          arguments: --only-4xx --check-favicon --check-html --assume-extension --empty-alt-ignore --disable-external
+        continue-on-error: true
+
+      - name: Deploy to GitHub Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
