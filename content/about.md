@@ -16,7 +16,7 @@ draft: false
 
 ## Education
 
-* MEng Civil Engineering, [University of Patras](https://www.upatras.gr/en/)
+* Diploma in Civil Engineering, University of Patras
 
 ### Languages
 
