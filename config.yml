@@ -1,7 +1,7 @@
 baseURL: "https://alexkanavos.com"
 title: Alex Kanavos
 paginate: 5
-theme: PaperMod
+theme: hugo-PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
