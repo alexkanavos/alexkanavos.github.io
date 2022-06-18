@@ -12,7 +12,7 @@ draft: false
 
 # About me :construction_worker:
 
-> Civil Engineer having interests in Structural Engineering, Structural Analysis and Design, Programming and Computer-Aided Design. Backed by a deep knowledge of engineering principles, but always keen on learning new skills and developing existing ones.
+> Civil Engineer having interests in Structural Engineering, Structural Analysis and Design, Programming and Computer-Aided Design.
 
 ## Education
 
