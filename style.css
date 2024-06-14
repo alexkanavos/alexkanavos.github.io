@@ -1,204 +1,91 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+@import url('https://fonts.googleapis.com/css?family=Vibur');
+html,body{
+  height:100%
 }
-
-html {
-  line-height: 1;
+body {
+  background: #112 url('./wall.jpg')  center no-repeat;
+  background-size:cover;
+  margin:0
 }
-
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-/**
-*
-* Used to generate responsive styles according to the breakpoint we set into the variables file
-*
-*/
-/* ==========================================================================
-Helper classes
-========================================================================== */
-/*
-* Hide from both screenreaders and browsers: h5bp.com/u
-*/
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-
-/*
-* Hide only visually, but have it available for screenreaders: h5bp.com/v
-*/
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-/*
-* Extends the .visuallyhidden class to allow the element to be focusable
-* when navigated to via the keyboard: h5bp.com/p
-*/
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-/*
-* Hide visually and from screenreaders, but maintain layout
-*/
-.invisible {
-  visibility: hidden;
-}
-
-/*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-* `contenteditable` attribute is included anywhere else in the document.
-* Otherwise it causes space to appear at the top and bottom of elements
-* that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-* `:before` to contain the top-margins of child elements.
-*/
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-html, body {
-  font-family: "Questrial", sans-serif;
-  display: table;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  min-width: 320px;
-  line-height: 1em;
-  font-size: 1.2em;
-  color: #fff;
-  background: #00ACDD;
-  overflow: hidden;
-  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjAlIiBjeT0iMCUiIHI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMGFjZGQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDM1NDQiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-  background: -moz-radial-gradient(top left, #00acdd 0%, #003544 100%);
-  background: -webkit-radial-gradient(top left, #00acdd 0%, #003544 100%);
-  background: radial-gradient(top left, #00acdd 0%, #003544 100%);
-}
-@media only screen and (max-width: 320px) {
-  html, body {
-    font-size: 0.96em;
-  }
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-a:hover, a:active, a:focus {
-  color: #ED1C24;
-}
-
-.main {
-  display: table-cell;
-  position: relative;
-  vertical-align: middle;
-  z-index: 1;
-}
-.main .inner-content {
-  width: 40%;
-  max-width: 400px;
-  padding: 7% 10%;
+.logo {
   text-align: center;
-  margin: 0 auto;
-}
-.main .inner-content h1 {
-  margin: 0 0 1em;
-}
-.main .inner-content img {
-  width: 100%;
-  max-height: 100px;
-}
-.main .inner-content ul {
-  margin: 1.4em 0 0;
-}
-.main .inner-content ul li {
-  margin: 0.4em 0.4em 0;
-  font-size: 1.4em;
-  display: inline-block;
-}
-
-#c {
+  width: 65%;
+  height: 250px;
+  margin: auto;
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
+  user-select: none;
 }
 
-#fork {
-  position: absolute;
-  bottom: 20px;
-  left: 10px;
-  padding: 15px;
-  font-size: 11px;
-  background: rgba(0, 0, 0, 0.3);
+.logo b{
+  font: 400 19vh "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
 }
+.logo b span{
+  animation: blink linear infinite 2s;
+}
+.logo b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+
+/* follow me @nodws */
+#btn-twtr{
+  clear:both;
+  color:#fff;
+  border:2px solid;
+  border-radius:3px;
+  text-align:center;
+  text-decoration:none;
+  display:block;
+  font-family:sans-serif;
+  font-size:14px;
+  width:13em;
+  padding:5px 10px;
+  font-weight:600;
+  position:absolute;
+  bottom:20px;
+  left:0;
+  right:0;
+  margin:0 auto;
+  background:rgba(0,0,0,0.2);
+  box-shadow:0 0 0px 3px rgba(0,0,0,0.2);
+  opacity:0.4
+}#btn-twtr:hover{color:#fff;opacity:1}
